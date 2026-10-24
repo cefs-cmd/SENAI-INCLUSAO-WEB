@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI INCLUSÃO - Tela Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="telacadastro.css">
+
+
+
+<body>
+
+    <div class="pagina">
+
+        <!-- MENU À ESQUERDA -->
+        <aside class="barra-lateral">
+
+            <!-- LOGO DO SITE -->
+            <div class="logo">
+                <span>SENAI</span>
+                <span>INCLUSÃO</span>
+            </div>
+
+            <nav class="etapas">
+            <!-- PARTE DAS OPÇÕES DE MENU -->
+                <a href="#" class="opcao-menu ativo">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Cadastro do Aluno</span>
+                </a>
+
+                <a href="#" class="opcao-menu">
+                    <i class="fa-regular fa-map"></i>
+                    <span>Mapas e Rotas</span>
+                </a>
+
+                <a href="#" class="opcao-menu">
+                    <i class="fa-solid fa-ban"></i>
+                    <span>Interdição de Trechos</span>
+                </a>
+
+                <a href="#" class="opcao-menu">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notificações</span>
+                </a>
+
+                <a href="telaciencia.html" class="opcao-menu">
+                    <i class="fa-regular fa-flag"></i>
+                    <span>Painel de Ciência</span>
+                </a>
+
+                <a href="#" class="opcao-menu">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Suporte</span>
+                </a>
+
+                <a href="#" class="opcao-menu sair">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Sair</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- TITULO ANTES DAS CREDENCIAIS-->
+        <main class="conteudo-principal">
+
+            <div class="frase-inicio">
+                <h2>Cadastrar Novo Aluno</h2>
+
+                <p class="instrucao">
+                    Insira as informações para gerar o primeiro acesso
+                    do aluno ao aplicativo.
+                </p>
+            </div>
+
+
+            <!-- CAMPO DO CADASTRO -->
+            <form class="credencial">
+
+                <div class="campos-formulario">
+
+                    <div class="campo">
+                        <label for="matricula">Matrícula</label>
+                        <input
+                            class="insira"
+                            id="matricula"
+                            name="matricula"
+                            type="text"
+                            placeholder="Ex: 202610982"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input
+                            class="insira"
+                            id="cpf"
+                            name="cpf"
+                            type="text"
+                            placeholder="000.000.000-00"
+                            required>
+                    </div>
+
+                    <div class="campo largura-total">
+                        <label for="nome">Nome Completo</label>
+                        <input
+                            class="insira"
+                            id="nome"
+                            name="nome"
+                            type="text"
+                            placeholder="Digite o nome completo do aluno"
+                            required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha Provisória</label>
+
+                        <div class="campo-com-icone">
+                            <input
+                                class="insira"
+                                id="senha"
+                                name="senha"
+                                type="password"
+                                placeholder="••••••••"
+                                required>
+
+                            <i class="fa-solid fa-lock"
+                               aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- NECESSIDADES DO ALUNO -->
+                <fieldset class="grupo-deficiencias">
+
+                    <legend>
+                        Deficiência / Necessidade do Aluno
+                    </legend>
+
+                    <div class="opcoes-deficiencias">
+
+                        <label class="opcao-checkbox">
+                            <input type="checkbox"
+                                   name="necessidades"
+                                   value="visual">
+                            <span>Visual</span>
+                        </label>
+
+                        <label class="opcao-checkbox">
+                            <input type="checkbox"
+                                   name="necessidades"
+                                   value="neurodivergente">
+                            <span>Neurodivergente</span>
+                        </label>
+
+                        <label class="opcao-checkbox">
+                            <input type="checkbox"
+                                   name="necessidades"
+                                   value="auditiva">
+                            <span>Auditiva</span>
+                        </label>
+
+                        <label class="opcao-checkbox">
+                            <input type="checkbox"
+                                   name="necessidades"
+                                   value="fisica">
+                            <span>Física</span>
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- BOTÃO DE CADASTRO -->
+                <a class="entrar">
+                    Cadastrar e Gerar Acesso
+                </a>
+
+
+                <!-- AVISO DE PRIMEIRO LOGIN -->
+                <div class="aviso-instrucao">
+
+                    <i class="fa-solid fa-circle-info icone-informacao"
+                       aria-hidden="true"></i>
+
+                    <div class="texto-aviso">
+
+                        <strong>
+                            Instrução para o primeiro login:
+                        </strong>
+
+                        <p>
+                            O aluno usará o CPF ou Matrícula e a senha
+                            provisória informada para efetuar a entrada no app.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

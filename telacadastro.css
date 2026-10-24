@@ -1,0 +1,364 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            margin: 0;
+            padding: 12px;
+            color: #0F172A;
+        }
+
+        /* Área principal da página */
+        .pagina {
+            display: grid;
+            grid-template-columns: 190px minmax(0, 1fr);
+            gap: 20px;
+
+            width: 100%;
+            max-width: 1400px;
+            min-height: calc(100vh - 24px);
+
+            margin: 0 auto;
+            padding: 16px;
+            background-color: #FFFFFF;
+        }
+
+        /* MENU LATERAL */
+        .barra-lateral {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        /* Logo SENAI */
+        .logo {
+            display: flex;
+            flex-direction: column;
+
+            width: fit-content;
+            margin: 0 0 50px 10px;
+
+            color: #174b9b;
+            font-size: 23px;
+            font-weight: 900;
+            font-style: italic;
+            line-height: 0.85;
+            letter-spacing: -1px;
+        }
+
+        /* Opções do menu */
+        .etapas {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .opcao-menu {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            width: 100%;
+            min-height: 47px;
+            padding: 12px 13px;
+
+            background-color: #f8fafc;
+            border: 1px solid #4285f4;
+            border-radius: 10px;
+
+            color: #005bbb;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .opcao-menu i {
+            width: 18px;
+            min-width: 18px;
+            text-align: center;
+            font-size: 14px;
+            color: #627994;
+        }
+
+        /* Menu selecionado */
+        .opcao-menu.ativo {
+            background-color: #0757b5;
+            color: white;
+            border-color: #0757b5;
+        }
+
+        .opcao-menu.ativo i {
+            color: white;
+        }
+
+       
+
+        /* Botão sair */
+        .opcao-menu.sair {
+            margin-top: 2px;
+            color: #ff3333;
+            background-color: #fff4f4;
+            border-color: #ffd5d5;
+        }
+
+        .opcao-menu.sair i {
+            color: #ff3333;
+        }
+
+        /* conteúdo à direita */
+        .conteudo-principal {
+            padding: 12px 10px 20px;
+        }
+        /* conteudo não ficar perto do cadastro */
+        .frase-inicio {
+            margin-bottom: 22px;
+        }
+
+        .frase-inicio h2 {
+            margin: 0 0 10px;
+            color: #0F172A;
+            font-size: 20px;
+        }
+
+        /* Nome abaixo de cadastrar aluno */
+        .instrucao {
+            margin: 0;
+            color: #64748B;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* campo para afastar o botão das checkbox */
+        .credencial {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            min-width: 0;
+        }
+
+        /* Matrícula e CPF lado a lado */
+        .campos-formulario {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px 10px;
+            width: 100%;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 0;
+        }
+
+        .campo.largura-total {
+            grid-column: 1 / -1;
+        }
+
+        .campo label {
+            color: #0F172A;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .insira {
+            width: 100%;
+            height: 38px;
+            padding: 9px 10px;
+
+            border: 1px solid #CBD5E1;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+
+            color: #334155;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            outline: none;
+        }
+
+        /* Senha com cadeado */
+        .campo-com-icone {
+            position: relative;
+            width: 100%;
+        }
+
+        .campo-com-icone .insira {
+            padding-right: 38px;
+        }
+
+        .campo-com-icone i {
+            position: absolute;
+            right: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #647994;
+            font-size: 14px;
+        }
+
+        /* OPÇÕES DE DEFICIÊNCIA */
+        .grupo-deficiencias {
+            border: none;
+            margin: 0;
+            padding: 0;
+            min-width: 0;
+        }
+
+        .grupo-deficiencias legend {
+            margin-bottom: 10px;
+            padding: 0;
+
+            color: #0F172A;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .opcoes-deficiencias {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .opcao-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            min-width: 0;
+            min-height: 40px;
+            padding: 8px;
+
+            border: 1px solid #CBD5E1;
+            border-radius: 8px;
+
+            color: #334155;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .opcao-checkbox input {
+            width: 14px;
+            height: 14px;
+            margin: 0;
+            accent-color: #0056B3;
+            flex-shrink: 0;
+        }
+
+        /* BOTÃO CADASTRAR */
+        .entrar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            min-height: 43px;
+            padding: 12px;
+
+            background-color: #0757b5;
+            border: 1px solid #0757b5;
+            border-radius: 8px;
+
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+
+            cursor: pointer;
+        }
+
+        .entrar:hover {
+            background-color: #064994;
+        }
+
+        /* AVISO SOBRE O PRIMEIRO LOGIN */
+        .aviso-instrucao {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            width: 100%;
+            padding: 13px 16px;
+
+            background-color: #E8F2FC;
+            border-radius: 10px;
+            color: #174b9b;
+        }
+
+        .icone-informacao {
+            color: #0757b5;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .texto-aviso {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .texto-aviso strong {
+            font-size: 11px;
+        }
+
+        .texto-aviso p {
+            margin: 0;
+            color: #475569;
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 760px) {
+            .pagina {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 14px;
+            }
+
+            .barra-lateral {
+                width: 100%;
+            }
+
+            .logo {
+                margin: 0 0 20px 5px;
+            }
+
+            .etapas {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 8px;
+            }
+
+            .opcao-menu {
+                gap: 8px;
+                padding: 10px;
+                font-size: 11px;
+            }
+
+            .conteudo-principal {
+                padding: 0;
+            }
+
+            .frase-inicio h2 {
+                font-size: 20px;
+            }
+        }
+
+        
+            .campo.largura-total {
+                grid-column: auto;
+            }
+
+            .opcoes-deficiencias {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .etapas {
+                grid-template-columns: 1fr;
+            }
