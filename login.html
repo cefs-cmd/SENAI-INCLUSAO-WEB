@@ -132,7 +132,7 @@ body {
 }
 
 .login{
-    padding: 0 0 0 30px;
+    padding: 0 190px 0 40px;
     border: 1px solid #E2E8F0;
     border-radius: 15px;
 }
@@ -167,13 +167,33 @@ body {
     font-weight: bold;
 }
 
+.portal-aprednizagem{
+    line-height: 11px;
 
-
-h1{
-    
 }
 
 
+.descricao-juntos{
+  line-height: 1px;
+  color: #64748B;
+  font-size: 16px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.asteristico{
+    color: #005CAA;
+}
 
 
 
@@ -219,14 +239,22 @@ h1{
 
 <div class="login">
 
+    <div class="portal-aprednizagem">
 <div class="identificacao">
     <span class="linha"></span>
     <span style="color: #005CAA;" class="descricao-login">PORTAL DE APRENDIZAGEM</span>
 </div>
 
-<H1>Acesse sua conta</H1>
-<p class="descricao">Entre com seus dados para continuar sua jornada de aprendizagem.</p>
 
+<H1>Acesse sua conta</H1>
+</div>
+
+<div class="descricao-juntos">
+<p>Entre com seus dados para continuar sua</p> 
+<p>jornada de aprendizagem.</p>
+</div>
+
+<div>   
 <label style="color: #00274B;" for="matricula">Matrícula <span class="asteristico">*</span></label>
         <div class="campo">
         <span></span>
@@ -235,7 +263,7 @@ h1{
     id="matricula">
 
     <br>
-    <br>
+    
 
      <label style="color: #00274B;" for="senha">Senha <span class="asteristico">*</span></label>
         <div class="campo">
