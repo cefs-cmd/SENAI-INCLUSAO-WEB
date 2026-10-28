@@ -68,7 +68,7 @@ body {
     background-color: white;
     border: 1px solid #cbddeb;
     border-radius: 20px;
-    padding: 8px 12px;
+    padding: 12px 12px;
 }
 /*mudando a cor do constraste apenas*/
 .contraste{
@@ -81,7 +81,7 @@ body {
 }
 
 .paint{
-     background: none;
+    background: none;
     border: none;
     cursor: pointer;
     color: #64748B;
@@ -128,13 +128,19 @@ body {
 
 .login-inicio{
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
 
-.login{
-    padding: 0 190px 0 40px;
+.login {
+    width: 100%;
+    max-width: 600px;
+
+    padding: 24px;
+    margin: 0 auto;
+
     border: 1px solid #E2E8F0;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 
@@ -147,7 +153,6 @@ body {
 }
 
 .identificacao {
-    padding-top: 18px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -180,19 +185,125 @@ body {
 }
 
 input{
-    width: 100%;
+    width: 500px;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #CBD5E1;
     border-radius: 10px;
     font-size: 16px;
     box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+    background-color: #edf4f8;
 }
 
 .asteristico{
     color: #005CAA;
+}
+
+::placeholder{
+    color: #94A3B8;
+}
+
+/*Ajustar fonte da frase da checkbox*/
+.lembrar {
+    padding: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #334155;
+    cursor: pointer;
+}
+
+/*Ajustar proporção do checkbox*/
+.lembrar input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: #005CAA;
+    cursor: pointer;
+}
+
+/*ajustar cor e posição do "esqueci minha senha"*/
+.esqueci {
+    padding: 2px 0px 0 195px ;
+    font-size: 14px;
+    font-weight: bold;
+    color: #005CAA;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+
+.opcoes{
+    padding: 0 0 15px;
+    display: flex;
+}
+
+/*Ajustando button*/
+.entrar {
+    height: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background-color: #0862ad;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+    
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+/*ajustando o local do divisor*/
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 30px 0;
+}
+
+/*criando divisor ao lado*/
+.divisor span {
+    flex: 1;
+    height: 1px;
+    background-color: #E2E8F0;
+}
+
+/*mudando formatação dentro da divisão*/
+.divisor p {
+    margin: 0;
+    color: #94A3B8;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/*ajustando alinhamento do suporte */
+.suporte{
+    margin: 0;
+    color: #64748B;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/*tirando o sublinhamento e colocando uma nova cor */
+.clique{
+    text-decoration: none;
+    color: #005CAA;
+}
+
+a{
+ text-decoration: none;
+ color:white
 }
 
 
@@ -282,15 +393,16 @@ input{
         Lembrar meu acesso
     </label>
 
-    <a class="esqueci" href="">Esqueci minha senha</a>
+    <a class="esqueci">Esqueci minha senha</a>
 
 </div>
 
-<center>
+
+
     <a href="telainicio.html" class="entrar">
     Entrar <span>➜</span>
     </a>
-</center>
+
 
 <div class="divisor">
     <span></span>
