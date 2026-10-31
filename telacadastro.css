@@ -249,6 +249,12 @@
             flex-shrink: 0;
         }
 
+        input:focus {
+        border-color: #0B4F9E;
+        outline: none;
+        box-shadow: 0 0 0 2px #cbddeb;
+        }
+
         /* BOTÃO CADASTRAR */
         .entrar {
             display: flex;
@@ -348,7 +354,7 @@
             .frase-inicio h2 {
                 font-size: 20px;
             }
-        }
+            }
 
         
             .campo.largura-total {

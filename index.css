@@ -184,6 +184,12 @@ input{
     background-color: #edf4f8;
 }
 
+input:focus {
+    border-color: #005CAA;
+    outline: none;
+    box-shadow: 0 0 0 2px #cbddeb;
+}   
+
 .asteristico{
     color: #005CAA;
 }
